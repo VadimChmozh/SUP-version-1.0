@@ -294,36 +294,39 @@
                     </div>
                 </div>
 
-                <form class="booking-form" id="rentForm">
-                    <h3>Заявка на бронирование</h3>
-                    
-                    <div class="form-group">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" placeholder="Иван" required>
-                    </div>
+                <form class="booking-form" action="https://formsubmit.co/vadiktchmozh@yandex.ru" method="POST">
+    <input type="hidden" name="_subject" value="🏄‍♂️ Новая заявка на САПБОРД!">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <h3>Заявка на бронирование</h3>
+    
+    <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="Имя" placeholder="Иван" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="phone">Номер телефона</label>
-                        <input type="tel" id="phone" placeholder="+7 (900) 000-00-00" required>
-                    </div>
+    <div class="form-group">
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="Телефон" placeholder="+7 (900) 000-00-00" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="type">Тип аренды</label>
-                        <select id="type">
-                            <option value="hourly">Почасовая (Армавир)</option>
-                            <option value="daily-1">Посуточно (1 сутки)</option>
-                            <option value="daily-2">Посуточно (2+ суток)</option>
-                            <option value="company">Аренда на компанию / Праздник</option>
-                        </select>
-                    </div>
+    <div class="form-group">
+        <label for="type">Тип аренды</label>
+        <select id="type" name="Тариф">
+            <option value="Почасовая (Армавир)">Почасовая (Армавир)</option>
+            <option value="Посуточно (1 сутки)">Посуточно (1 сутки)</option>
+            <option value="Посуточно (2+ суток)">Посуточно (2+ суток)</option>
+            <option value="На компанию">Аренда на компанию / Праздник</option>
+        </select>
+    </div>
 
-                    <div class="form-group">
-                        <label for="count">Количество сапбордов</label>
-                        <input type="number" id="count" min="1" max="18" value="1">
-                    </div>
+    <div class="form-group">
+        <label for="count">Количество сапбордов</label>
+        <input type="number" id="count" name="Количество_сапов" min="1" max="18" value="1">
+    </div>
 
-                    <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
-                </form>
+    <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+</form>
             </div>
         </div>
     </section>
